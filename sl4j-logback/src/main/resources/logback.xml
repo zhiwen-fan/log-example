@@ -1,0 +1,17 @@
+<configuration>
+
+    <logger name="com.bruce.log.example.LogTest" level="DEBUG"></logger>
+
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %highlight(%level) %cyan(%logger{10}):%magenta(%L) %highlight(%msg) %n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="myAppender" class="com.bruce.log.example.MyAppender"/>
+
+    <root level="INFO">
+       <appender-ref ref="stdout"/>
+       <!-- <appender-ref ref="myAppender"/>-->
+    </root>
+</configuration>
