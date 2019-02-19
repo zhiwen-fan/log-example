@@ -12,6 +12,7 @@
         <module>sl4j-logback</module>
         <module>sl4j-log4j2</module>
         <module>sl4j-jcl</module>
+        <module>jcl-log4j2</module>
     </modules>
 
 

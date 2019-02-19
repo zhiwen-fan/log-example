@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %level [%thread][%logger:%L] - %msg%n"></PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <logger name="com.bruce.log.example.LogTest" level="debug"/>
+
+        <Root level="info">
+            <AppenderRef ref="console"></AppenderRef>
+        </Root>
+    </Loggers>
+</Configuration>
