@@ -10,8 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>sl4j-logback</module>
-        <module>sl4j-log4j</module>
         <module>sl4j-log4j2</module>
+        <module>sl4j-jcl</module>
     </modules>
 
 
